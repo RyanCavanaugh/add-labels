@@ -1,12 +1,11 @@
-name: 'Pull Request Labeler'
-description: 'Label pull requests by files altered'
-author: 'GitHub'
+name: 'Add Labels'
+description: 'Add labels to issues or PRs'
+author: 'Microsoft'
 inputs: 
   repo-token:
     description: 'The GITHUB_TOKEN secret'
-  configuration-path:
-    description: 'The path for the label configurations'
-    default: '.github/labeler.yml'
+  labels:
+    description: 'Labels to add to this issue or PR'
 runs:
   using: 'node12'
   main: 'lib/main.js'
